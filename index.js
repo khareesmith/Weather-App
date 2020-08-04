@@ -1,20 +1,11 @@
 // This is our API key
-var APIKey = "";
+const APIKey = "a3088a8f93b46df8dd859771fb1b2e95";
 
-// Here we are building the URL we need to query the database
-var queryURL = "" + APIKey;
+$("#weather-btn").click(function (e) { 
+  e.preventDefault();
+  let city = $("#city").val();
+  console.log(city);
 
-// Here we run our AJAX call to the OpenWeatherMap API
-$.ajax({
-  url: queryURL,
-  method: "GET"
-})
-  // We store all of the retrieved data inside of an object called "response"
-  .then(function(response) {
-      console.log(queryURL);
-      console.log(response);
-
-    // Transfer Content to HTML using jQuery
-    // console.log your data response
-
-  });
+  let queryURL = "api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + APIKey;
+  console.log(queryURL);
+});
