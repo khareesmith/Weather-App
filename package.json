@@ -1,0 +1,11 @@
+{
+  "name": "skillchallengeapi",
+  "version": "1.0.0",
+  "description": "* Create a weather app using an API from [Open Weather Map](https://openweathermap.org/guide#how)\r * **_OR_**\r * Create an app using any third party API\r * Add styling to your app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
