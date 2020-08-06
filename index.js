@@ -16,12 +16,33 @@ $("#weather-btn").click(function (e) {
     .then(function(response) {
         console.log(queryURL);
         console.log(response);
+
+        $(".current").show();
   
       // Transfer Content to HTML using jQuery
       // console.log your data response
 
+      $(".city-name").html(response.city.name + ", " + response.city.country);
+
+      d = JSON.stringify(response.list[0].dt_txt);
+      n = d.substring(1,11);
+      let parts = n.split('-');
+
+      dt = new Date(parts[0], parts[1] - 1, parts[2]);
+      currentdt = dt.toDateString();
+
+      $(".current-time").html(currentdt);
+
+      $(".current-temp").html(response.list[0].main.temp);
+
+      $(".current-desc").html(response.list[0].weather[0].description);
+
+      let iconcode = response.list[0].weather[0].icon;
+      iconurl = "https://openweathermap.org/img/wn/" + iconcode + "@2x.png";
+      console.log(iconurl);
+
+      $("#w-icon").attr('src', iconurl);
       
-  
     });
   
 

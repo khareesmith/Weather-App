@@ -10,7 +10,7 @@
     <title>Weather.API</title>
 </head>
 <body>
-   <header class="jumbotron container-fluid text-center">
+   <header class="jumbotron container-fluid text-center banner">
        <h1 class="display-3">Weather.App</h1>
    </header>
    <!-- API Retrieved Data Will Dump Here -->
@@ -26,17 +26,22 @@
     <div class="row justify-content-center">
         <div class="col-10 current">
             <div class="row justify-content-center">
-                <h2 class="display-5 city-name">city name</h2>
+                <h2 class="display-4 city-name"></h2>
+            </div>
+            <div class="row justify-content-center">
+                <h4 class="display-5 current-time"></h4>
             </div>
             <div class="row">
-            <div class="col-8">
-                <p class="current-temp">currnt temp</p>
-                <p class="current-desc">desc</p>
+                <div class="col-8">
+                <p>Current Temp: <span class="current-temp"> - </span>&#8457;</p>
+                <p>Current Weather: <span class="current-desc"> - </span></p>
             </div>
             <div class="col-4 justify-content-center">
-                <i class="icon">icon here</i>
+                <div class="icon">
+                    <img src="" id="w-icon" alt="Weather Icon" class="d-block">
+                </div>
             </div>
-        </div>
+            </div>
         </div>
     </div>
 

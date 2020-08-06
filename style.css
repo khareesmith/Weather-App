@@ -1,7 +1,21 @@
 .current {
     background: lightgray;
     border: black 2px solid;
-    width: 200px;
-    height: 200px;
     margin-top: 1rem;
+    height: 15rem;
+    display: none;
+}
+
+#weather-btn {
+    margin-top: 1rem;
+}
+
+.banner {
+    background-image: url(https://images.unsplash.com/photo-1530908295418-a12e326966ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body {
+    background:#fea28f;
 }
