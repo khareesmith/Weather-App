@@ -45,5 +45,4 @@ $("#weather-btn").click(function (e) {
       
     });
   
-
 });
