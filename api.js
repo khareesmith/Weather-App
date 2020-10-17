@@ -9,8 +9,9 @@ $("#weather-btn").click(function (e) {
   let queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + APIKey;
 
   $.ajax({
+    type: "method",
     url: queryURL,
-    method: "GET"
+    method: "GET",
   })
     // We store all of the retrieved data inside of an object called "response"
     .then(function(response) {
